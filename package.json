@@ -1,0 +1,7 @@
+{
+    "main":  "src/index.js",
+    "description":  "Adaptive motion library",
+    "name":  "vouh-adaptive-motion",
+    "version":  "1.0.0",
+    "type":  "module"
+}
