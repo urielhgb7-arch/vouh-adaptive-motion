@@ -1,7 +1,25 @@
 {
-    "main":  "src/index.js",
-    "description":  "Adaptive motion library",
-    "name":  "vouh-adaptive-motion",
-    "version":  "1.0.0",
-    "type":  "module"
+  "name": "vouh-adaptive-motion",
+  "version": "0.1.0",
+  "description": "Librairie JS adaptant automatiquement le rendu d'animations selon la puissance CPU et la qualité réseau du device",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "esbuild src/index.js --bundle --format=esm --outfile=dist/index.esm.js && esbuild src/index.js --bundle --format=cjs --outfile=dist/index.cjs.js"
+  },
+  "keywords": [
+    "animation",
+    "adaptive",
+    "performance",
+    "low-end-devices"
+  ],
+  "license": "MIT",
+  "author": "Uriel",
+  "devDependencies": {
+    "esbuild": "^0.28.2"
+  }
 }
